@@ -408,7 +408,7 @@ type FlashbotsSendBundleResponse struct {
 type FlashbotsSendPrivateTransactionRequest struct {
 	Tx string `json:"tx"`
 	// Hex-encoded number string, optional. Highest block number in which the transaction should be included.
-	MaxBlockNumber string                         `json:"maxBlockNumber"`
+	MaxBlockNumber string                         `json:"maxBlockNumber,omitempty"`
 	Preferences    *FlashbotsPrivateTxPreferences `json:"preferences,omitempty"`
 }
 
